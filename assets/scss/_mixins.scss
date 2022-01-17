@@ -1,0 +1,15 @@
+@mixin flex ($just:center, $align:center, $dir:row, $wrap:wrap){
+    display:flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin reset{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color:none;
+}

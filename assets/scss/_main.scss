@@ -1,0 +1,30 @@
+*{
+    @include reset;
+}
+
+body{
+    font-family: roboto, sans-serif;
+}
+
+h1{
+    font-family: monoton;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: wire;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+h3{
+    font-family: wire;
+}
+
+.green{
+    color: $green;
+}
+.purple{
+    color: $darkPurple;
+}
