@@ -1,0 +1,49 @@
+@font-face {
+  font-family: monoton;
+  src: url(../fonts/Monoton/Monoton-Regular.ttf);
+}
+@font-face {
+  font-family: wire;
+  src: url(../fonts/Wire_one/WireOne-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: none;
+}
+
+body {
+  font-family: roboto, sans-serif;
+}
+
+h1 {
+  font-family: monoton;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: wire;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: wire;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.purple {
+  color: #1b0823;
+}
+
+/*# sourceMappingURL=style.css.map */
