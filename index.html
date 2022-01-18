@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de maquettage, réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Aloïs Patoor, Développeur web et web designer en Périgord</title>
@@ -20,25 +20,25 @@
         <!-- DESKTOP NAV -->
         <nav id="desktopNav">
             <ul>
-                <li><a href="">à propos</a></li>
-                <li><a href="">compétences</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">réalisations</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#about">à propos</a></li>
+                <li><a href="#skills">compétences</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#gallery">réalisations</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <!-- MENU BURGER -->
-        <nav id="menu-burger">
+        <nav id="menu-burger" class="displayNone">
 
         </nav>
         <!-- MOBILE NAV -->
-        <nav id="mobileNav">
+        <nav id="mobileNav" class="displayNone">
             <ul>
-                <li><a href="">à propos</a></li>
-                <li><a href="">compétences</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">réalisations</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#about">à propos</a></li>
+                <li><a href="#skills">compétences</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#gallery">réalisations</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -58,46 +58,168 @@
         <!-- COMPETENCES -->
         <section id="skills">
             <h2 class="green">compétences</h2>
-            <article>
-                <img src="assets/img/pexels-mikechie-esparagoza-1601773.jpg" alt="Photo d'illustration de design vintage">
-                <h3>Compétences Graphiques</h3>
-                <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Figma</li>
-                    <li>After Effect</li>
-                </ul>
-            </article>
-            <article>
-                <img src="assets/img/pexels-aleksandar-pasaric-1820770.jpg" alt="Photo d'illustration d'un écran de pc">
-                <h3>Compétences Développement</h3>
-                <ul>
-                    <li>HTML / CSS / SASS</li>
-                    <li>Javascript</li>
-                    <li>PHP / SYMFONY</li>
-                    <li>SQL / MYSQL</li>
-                </ul>
-            </article>
+            <div class="flexboxSkills">
+                <article>
+                    <div class="skillsImgSizing">
+                        <img src="assets/img/pexels-mikechie-esparagoza-1601773.jpg" alt="Photo d'illustration de design vintage">
+                    </div>
+                    <h3>Compétences Graphiques</h3>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Figma</li>
+                        <li>After Effect</li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="skillsImgSizing">
+                        <img src="assets/img/pexels-kevin-ku-577585.jpg" alt="Photo d'illustration d'un écran de pc">
+                    </div>
+                    <h3>Compétences Développement</h3>
+                    <ul>
+                        <li>HTML / CSS / SASS</li>
+                        <li>Javascript</li>
+                        <li>PHP / SYMFONY</li>
+                        <li>SQL / MYSQL</li>
+                    </ul>
+                </article>
+            </div>
         </section>
         <!-- SERVICES -->
         <section id="services">
             <h2 class="green">services</h2>
-            <article>
-                <h3></h3>
-            </article>
-            <article>
-                <h3></h3>
-            </article>
-            <article>
-                <h3></h3>
-            </article>
-            <article>
-                <h3></h3>
-            </article>
+            <div class="flexboxServices">
+                <article>
+                    <h3>Référencement SEO</h3>
+                    <p>Affichage sémantique des informations,
+                        des pages propres pour un <strong>référencement optimal</strong>.</p>
+                </article>
+                <article>
+                    <h3>Intégration Web</h3>
+                    <p>Intégration <strong>HTML/CSS</strong> respectueuse des standards du web</p>
+                </article>
+            </div>
+            <div class="flexboxServices">
+                <article>
+                    <h3>Site Vitrine / E-Commerce</h3>
+                    <p>Création du <strong>site vitrine</strong> de votre entreprise ou d’un <strong>e-commerce</strong></p>
+                </article>
+                <article>
+                    <h3>Responsive Design</h3>
+                    <p>Votre site <strong>adapté</strong> à tout type d’écran</p>
+                </article>
+            </div>
+        </section>
+        <!-- GALLERY -->
+        <section id="gallery">
+            <div id="titleGallery">
+                <h2 class="purple">réalisations</h2>
+                <p>Voici quelques exemples de mes rèalisations.</p>
+                <p>Cliquez sur les images pour les agrandir et avoir plus d’informations</p>
+            </div>
+            <div id="flexboxGallery">
+                <article>
+                    <div id="firstModal" class="boxSizing" onclick="getImg('close')">
+                        <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie">
+                        <p>Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong> du site François Plomberie</p>
+                    </div>
+                    <div class="miniature">
+                        <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie" class="modal-content" onclick="getImg('firstModal')">
+                    </div>
+                </article>
+                <article>
+                    <div id="secondModal" class="boxSizing" onclick="getImg('close')">
+                        <img src="assets/img/maquette.png" alt="Maquette du site Gaming Campus">
+                        <p>Utilisation de <strong>Bootstrap</strong> pour refaire à l'identique cette maquette. Lien GitHub <a href="https://github.com/aloispatoor/GAMINGCAMPUS" target="_blank">ici</a></p>
+                    </div>
+                    <div class="miniature">
+                        <img src="assets/img/maquette.png" alt="Maquette du site Gaming Campus" class="modal-content" onclick="getImg('secondModal')">
+                    </div>
+                </article>
+                <article>
+                    <div id="thirdModal" class="boxSizing" onclick="getImg('close')">
+                        <img src="assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching">
+                        <p>Maquette refaire à l'identique en utilisant <strong>HTML et SCSS</strong>. Lien GitHub <a href="https://github.com/aloispatoor/PEPSCOACHING" target="_blank">ici</a></p>
+                    </div>
+                    <div class="miniature">
+                        <img src="assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching" class="modal-content" onclick="getImg('thirdModal')">
+                    </div>
+                </article>
+                <article>
+                    <div id="fourthModal" class="boxSizing" onclick="getImg('close')">
+                        <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest">
+                        <p>Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong> du site Nathalie Genest</p>
+                    </div>
+                    <div class="miniature">
+                        <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest" class="modal-content" onclick="getImg('fourthModal')">
+                    </div>
+                </article>
+                <article>
+                    <div id="fifthModal" class="boxSizing" onclick="getImg('close')">
+                        <img src="assets/img/pokepet.png" alt="Maquette du site Pokepet">
+                        <p>Site réalisé en <strong>HTML et SCSS</strong>, maquetté sur <strong>Figma</strong></p>
+                    </div>
+                    <div class="miniature">
+                        <img src="assets/img/pokepet.png" alt="Maquette du site Pokepet" class="modal-content" onclick="getImg('fifthModal')">
+                    </div>
+                </article>
+                <article>
+                    <div id="sixthModal" class="boxSizing" onclick="getImg('close')">
+                        <img src="assets/img/screenshot.png" alt="Maquette du site ONEMILLIONSLINE">
+                        <p><p>Utilisation de <strong>Bootstrap</strong> pour refaire à l'identique cette maquette. Lien GitHub <a href="https://github.com/aloispatoor/ONEMILLIONS" target="_blank">ici</a></p></p>
+                    </div>
+                    <div class="miniature">
+                        <img src="assets/img/screenshot.png" alt="Maquette du site ONEMILLIONSLINE" class="modal-content" onclick="getImg('sixthModal')">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="green">me contacter</h2>
+            <div id="flexboxForm">
+                <form action="">
+                    <input type="text" placeholder="Votre Nom">
+                    <input type="email" placeholder="Votre Adresse e-mail">
+                    <textarea name="message" id="message" placeholder="Votre Message"></textarea>
+                </form>
+                <div id="address">
+                    <p>Aloïs Patoor <br>
+                        9 rue icarie <br>
+                        24000 PERIGUEUX <br>
+                        Tel : 06.08.64.60.11 <br>
+                        palois89@posteo.net</p>
+                </div>
+            </div>
+            <a href="#" class="button">envoyer</a>
         </section>
     </main>
+    <!-- FOOTER -->
     <footer>
+        <div id="returnToHeader">
 
+        </div>
+        <section id="topFooter">
+            <img src="assets/img/logo.png" alt="Logo de Aloïs Patoor">
+            <div id="icons">
+                <a href="https://github.com/aloispatoor" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aloïs-patoor-67a676199" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+        <section id="middleFooter">
+            <ul>
+                <li><a href="#about">à propos</a></li>
+                <li><a href="#skills">compétences</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#gallery">réalisations</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </section>
+        <section id="bottomFooter">
+            <p><a href="#">Mentions Légales</a> - Copyright 2022 Aloïs Patoor</p>
+        </section>
     </footer>
+    <script src="assets/js/menuburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/sticky.js"></script>
 </body>
 </html>

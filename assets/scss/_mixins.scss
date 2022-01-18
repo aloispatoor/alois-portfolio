@@ -13,3 +13,13 @@
     list-style: none;
     color:none;
 }
+
+@mixin button{
+    text-align:center;
+    text-transform: uppercase;
+    font-family: wire;
+    color: white;
+    font-size: 2em;
+    background-color: black;
+    padding: 0 2em;
+}

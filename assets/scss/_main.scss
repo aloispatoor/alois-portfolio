@@ -16,10 +16,15 @@ h2{
     font-family: wire;
     text-transform: uppercase;
     font-size: 5rem;
+    text-align:center;
 }
 
 h3{
     font-family: wire;
+}
+
+input, textarea{
+    font-family: roboto, sans-serif;
 }
 
 .green{
@@ -27,4 +32,13 @@ h3{
 }
 .purple{
     color: $darkPurple;
+}
+
+.displayNone{
+    display:none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
 }

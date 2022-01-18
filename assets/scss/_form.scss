@@ -1,0 +1,45 @@
+#contact{
+    @include flex($dir:column);
+    background: $darkPurple;
+    padding: 2em 5em;
+    h2{
+        margin-bottom:1em;
+    }
+    #flexboxForm{
+        @include flex($just:space-between, $align:flex-start);
+        gap: 10em;
+        margin-top: 2em;
+        margin-bottom: 5em;
+        form{
+            @include flex($dir:column, $align:stretch);
+            input{
+                height:2em;
+                width: 30em;
+                margin-bottom: 2em;
+            }
+            textarea{
+                max-width: 30em;
+                min-width: 30em;
+                min-height: 15em;
+                max-height: 15em;
+            }
+        }
+        #address{
+            @include flex;
+            background:black;
+            color:white;
+            text-align:center;
+            letter-spacing: 0.20em;
+            width: 20em;
+            height: 20em;
+        }
+    }
+    .button{
+        @include button;
+        transition: all 0.5s ease;
+    }  
+    .button:hover{
+        box-shadow: 0 0 0.15em $green;
+        color: $green;
+    }
+}

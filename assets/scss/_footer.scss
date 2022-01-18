@@ -1,0 +1,39 @@
+footer{
+    background : $darkPurple;
+    #topFooter{
+        @include flex ($just:space-between);
+        background : black;
+        color: white;
+        font-size: 3em;
+        padding: 0 2em;
+        img{
+            width:3rem;
+        }
+        a{
+            color: white;
+        }
+    }
+    #middleFooter{
+        padding: 2em 0;
+        @include flex;
+        text-align:center;
+        ul{
+            li{
+                margin-bottom:1em;
+            }
+        }
+        a{
+            color:white;
+            text-transform: capitalize;
+        }
+    }
+    #bottomFooter{
+        height: 3rem;
+        @include flex;
+        background : black;
+        color: white;
+        a{
+            color:white;
+        }
+    }
+}
