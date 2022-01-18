@@ -5,4 +5,35 @@
     #menu-burger{
         display:block;
     }
+    #contact{
+        #flexboxForm{
+            @include flex($dir: column-reverse);
+            gap: 2em;
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    #headerImage{
+        .logo{
+            display:none;
+        }
+        h1{
+            padding-left: 1em;
+        }
+    }
+    footer{
+        #returnToHeader{
+            display: none;
+        }
+    }
+    #services{
+        h2{
+            margin-bottom: 0.25em;
+        }
+        .flexboxServices{
+            @include flex($dir:column);
+            gap: 1.5em;
+        }
+    }
 }

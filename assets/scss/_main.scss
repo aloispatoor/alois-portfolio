@@ -10,7 +10,7 @@ body{
 h1{
     font-family: monoton;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 h2{
@@ -30,9 +30,11 @@ input, textarea{
 
 .green{
     color: $green;
+    text-shadow: 0 0 0.15em $green;
 }
 .purple{
     color: $darkPurple;
+    text-shadow: 0 0 0.15em $darkPurple;
 }
 
 .displayNone{
@@ -42,4 +44,14 @@ input, textarea{
 .sticky{
     position: fixed;
     top: 0;
+}
+
+.reveal-invisible{
+    opacity:0;
+    transform: translateY(-30px);
+}
+.reveal-visible{
+    opacity:1;
+    transform: translateY(0);
+    transition: all .3s ease;
 }

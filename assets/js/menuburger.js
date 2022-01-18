@@ -6,7 +6,7 @@ menuBurger.addEventListener("click", function(){
 });
 
 
-link.addEventListener('click', function(e) {
+menuBurger.addEventListener('click', function(e) {
     e.preventDefault()
     bars.classList.toggle('open')
 })

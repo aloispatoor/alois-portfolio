@@ -1,5 +1,5 @@
 // Initial state
-let scrollPos = 0;
+scrollPos = 0;
 let getHeader = document.querySelector("#returnToHeader");
 // adding scroll event
 window.addEventListener('scroll', function(){
