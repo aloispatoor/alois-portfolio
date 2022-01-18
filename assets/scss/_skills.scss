@@ -8,17 +8,16 @@
         article{
             @include flex($dir: column);
             width: 25rem;
-            height: 30rem;
+            height: 25rem;
             background: $darkPurple;
             box-shadow: 1px 1px $green;
             color: white;
             .skillsImgSizing{
-                width:200px;
-                height:200px;
-                object-fit: cover;
-                object-position: center;
                 img{
                     width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: center;
                 }
             }
             h3{

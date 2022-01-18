@@ -17,6 +17,7 @@
   text-decoration: none;
   list-style: none;
   color: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,17 +74,34 @@ input, textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 #headerImage h1 {
   color: white;
   text-shadow: 0 0 0.15em #00ff00;
   font-weight: lighter;
+  animation: flicker 1.5s infinite alternate;
+}
+#headerImage h1::selection {
+  background-color: #00ff00;
+  color: #00ff00;
+}
+#headerImage h1:focus {
+  outline: none;
 }
 #headerImage .logo {
   width: 20rem;
   margin: 0 1em;
 }
 
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff, 0 0 2rem #00ff00, 0 0 4rem #00ff00, 0 0 6rem #00ff00, 0 0 8rem #00ff00, 0 0 10rem #00ff00;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
 #desktopNav {
   display: flex;
   justify-content: center;
@@ -93,6 +111,7 @@ input, textarea {
   height: 10vh;
   width: 100%;
   background-color: #1b0823;
+  z-index: 101;
 }
 #desktopNav ul {
   width: 100%;
@@ -107,8 +126,100 @@ input, textarea {
   text-transform: uppercase;
   font-size: 3rem;
   color: white;
+  transition: all 0.3s ease;
+}
+#desktopNav ul a:hover {
+  text-shadow: 0 0 0.15em #00ff00;
 }
 
+#menu-burger {
+  position: fixed;
+  z-index: 100;
+  top: 10vh;
+  right: 2em;
+  background: #1b0823;
+  box-shadow: 1px 1px 1px black;
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+
+#bars {
+  width: 30px;
+  height: 3px;
+  background: white;
+  display: inline-block;
+  position: relative;
+}
+
+#bars::before,
+#bars::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  background: white;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+#bars::before {
+  top: -10px;
+}
+
+#bars::after {
+  top: 10px;
+}
+
+#bars.open {
+  background: transparent;
+  /* la barre du milieu disparait */
+}
+
+/* celles du haut et du bas s'inclinent pour former une croix */
+#bars.open::before {
+  background: #00ff00;
+  box-shadow: 0 0 0.15em #00ff00;
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#bars.open::after {
+  background: #00ff00;
+  box-shadow: 0 0 0.15em #00ff00;
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#mobileNav {
+  position: fixed;
+  z-index: 99;
+  background: rgba(27, 8, 35, 0.9);
+  height: 100vh;
+  top: 0;
+  right: 0;
+  padding: 10em 5em;
+  text-align: right;
+  animation-name: getTheNav;
+  animation-duration: 0.3s;
+}
+#mobileNav ul li {
+  margin-bottom: 3em;
+}
+#mobileNav a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+@keyframes getTheNav {
+  from {
+    right: -70em;
+  }
+  to {
+    right: 0;
+  }
+}
 #about {
   margin: 2em 10em;
 }
@@ -140,19 +251,16 @@ input, textarea {
   flex-direction: column;
   flex-wrap: wrap;
   width: 25rem;
-  height: 30rem;
+  height: 25rem;
   background: #1b0823;
   box-shadow: 1px 1px #00ff00;
   color: white;
 }
-#skills .flexboxSkills article .skillsImgSizing {
-  width: 200px;
+#skills .flexboxSkills article .skillsImgSizing img {
+  width: 100%;
   height: 200px;
   object-fit: cover;
   object-position: center;
-}
-#skills .flexboxSkills article .skillsImgSizing img {
-  width: 100%;
 }
 #skills .flexboxSkills article h3 {
   font-size: 3em;
@@ -344,6 +452,7 @@ input, textarea {
 
 footer {
   background: #1b0823;
+  position: relative;
 }
 footer #topFooter {
   display: flex;
@@ -390,6 +499,39 @@ footer #bottomFooter {
 }
 footer #bottomFooter a {
   color: white;
+}
+footer #returnToHeader {
+  position: fixed;
+  padding: 5px 20px;
+  bottom: 3rem;
+  right: 10px;
+  z-index: 99;
+  border-radius: 30px;
+  font-size: 2.5em;
+  text-shadow: 0 0 0.15em #00ff00;
+  animation-name: getHeader;
+  animation-duration: 0.3s;
+}
+footer #returnToHeader a {
+  color: black;
+}
+
+@keyframes getHeader {
+  from {
+    right: -10px;
+  }
+  to {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #desktopNav {
+    display: none;
+  }
+
+  #menu-burger {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

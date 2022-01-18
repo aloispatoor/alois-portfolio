@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de maquettage, réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Aloïs Patoor, Développeur web et web designer en Périgord</title>
@@ -29,7 +31,7 @@
         </nav>
         <!-- MENU BURGER -->
         <nav id="menu-burger" class="displayNone">
-
+            <a id="link" href="#"><span id="bars"></span></a>
         </nav>
         <!-- MOBILE NAV -->
         <nav id="mobileNav" class="displayNone">
@@ -48,11 +50,11 @@
         <section id="about">
             <h2 class="purple">à propos</h2>
             <article>
-                <p>Ce portfolio est aussi chaotique que mon parcours professionnel.
-                    Tout d’abord diplômé d’un BTS Assistant de Manager, j’excellais bien plus dans le <strong>SQL</strong> que le traitement de texte.
-                    Ensuite, aprés des annèes à chercher ma voie et moultes missions d’interim en agro-alimentaire, le métier de développeur web m’est paru comme une évidence.</p>
+                <p>Avant toute chose, sachez que ce portfolio est aussi chaotique que mon parcours professionnel.
+                    Diplômé d’un BTS Assistant de Manager, j’excellais bien plus dans le <strong>SQL</strong> que les autres matières.
+                    Ensuite, aprés des annèes à chercher ma voie et moultes missions d’interim en agro-alimentaire, le métier de développeur web m’est paru comme une évidence le jour où j'ai développé ma propre application web pour présenter mes dessins.(Ah oui parce que je suis dessinateur aussi)</p>
                     
-                    <p>Également dessinateur, ma fibre <strong>artistique / graphiste</strong> a trouvé une façon de se sortir du placard dans ce métier qui demande <strong>curiosité et créativité</strong>.</p>
+                    <p>Ma fibre <strong>artistique / graphiste</strong> a trouvé une façon de se sortir du placard dans ce métier qui demande <strong>curiosité et créativité</strong>. Véritable ermite vivant devant son écran d'ordinateur, c'est un véritable plaisir pour moi de prendre du temps sur vos demandes (<strong>sites web</strong>, <strong>UX Design</strong>, création de logo...) pour les chérir et les peaufiner.</p>
             </article>
         </section>
         <!-- COMPETENCES -->
@@ -195,8 +197,8 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <div id="returnToHeader">
-
+        <div id="returnToHeader" class="displayNone">
+            <a href="#headerImage"><i class="fas fa-angle-double-up"></i></a>
         </div>
         <section id="topFooter">
             <img src="assets/img/logo.png" alt="Logo de Aloïs Patoor">
@@ -221,5 +223,6 @@
     <script src="assets/js/menuburger.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/sticky.js"></script>
+    <script src="assets/js/arrow.js"></script>
 </body>
 </html>
