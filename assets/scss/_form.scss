@@ -5,6 +5,11 @@
     h2{
         margin-bottom:1em;
     }
+    p{
+        margin-bottom: 0.5em;
+        letter-spacing: 0.20em;
+        color: white;
+    }
     #flexboxForm{
         @include flex($just:space-between, $align:flex-start);
         gap: 10em;

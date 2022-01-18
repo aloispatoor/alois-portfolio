@@ -409,6 +409,11 @@ input, textarea {
 #contact h2 {
   margin-bottom: 1em;
 }
+#contact p {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.2em;
+  color: white;
+}
 #contact #flexboxForm {
   display: flex;
   justify-content: space-between;
