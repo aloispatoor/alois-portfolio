@@ -326,7 +326,7 @@ input, textarea {
   margin-bottom: 0.5em;
   letter-spacing: 0.2em;
 }
-#gallery #flexboxGallery {
+#gallery .flexboxGallery {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -335,25 +335,25 @@ input, textarea {
   gap: 1em;
   margin: 0 5em;
 }
-#gallery #flexboxGallery article .miniature {
+#gallery .flexboxGallery article .miniature {
   width: 300px;
   height: 300px;
   overflow: hidden;
   display: inline-block;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
 }
-#gallery #flexboxGallery article .miniature img {
+#gallery .flexboxGallery article .miniature img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
   transition: all 0.3s ease-in-out;
 }
-#gallery #flexboxGallery article .miniature img:hover {
+#gallery .flexboxGallery article .miniature img:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-#gallery #flexboxGallery article .boxSizing {
+#gallery .flexboxGallery article .boxSizing {
   display: none;
   /* Caché par défaut */
   position: fixed;
@@ -375,17 +375,17 @@ input, textarea {
   animation-name: getModal;
   animation-duration: 0.5s;
 }
-#gallery #flexboxGallery article .boxSizing img {
+#gallery .flexboxGallery article .boxSizing img {
   width: 25%;
 }
-#gallery #flexboxGallery article .boxSizing p {
+#gallery .flexboxGallery article .boxSizing p {
   color: white;
 }
-#gallery #flexboxGallery article .boxSizing p a {
+#gallery .flexboxGallery article .boxSizing p a {
   color: white;
   transition: all 0.3s ease;
 }
-#gallery #flexboxGallery article .boxSizing p a:hover {
+#gallery .flexboxGallery article .boxSizing p a:hover {
   color: #00ff00;
 }
 
@@ -584,6 +584,11 @@ footer #returnToHeader a {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1.5em;
+  }
+}
+@media screen and (max-width: 850px) {
+  #about {
+    margin: 2em;
   }
 }
 

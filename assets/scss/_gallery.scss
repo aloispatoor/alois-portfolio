@@ -9,7 +9,7 @@
             letter-spacing: 0.20em;
         }
     }
-    #flexboxGallery{
+    .flexboxGallery{
         @include flex($just:space-evenly);
         gap: 1em;
         margin: 0 5em;
