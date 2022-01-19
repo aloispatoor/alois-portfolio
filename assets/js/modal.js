@@ -10,7 +10,7 @@ function getImg(modal){
     }
     // Ouvrir la bonne modal et paramètrer le button 'close'
     if(modal != 'close'){
-      goodModal.style.display = "block";
+      goodModal.style.display = "flex";
     } else if (window.addEventListener("click", function(){
       goodModal.style.display = "none";
     }));

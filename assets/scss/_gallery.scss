@@ -12,7 +12,7 @@
     .flexboxGallery{
         @include flex($just:space-evenly);
         gap: 1em;
-        margin: 0 5em;
+        margin: 2em 5em;
         article{
             // MINIATURE
             .miniature{
@@ -37,9 +37,10 @@
             .boxSizing{
                 display: none; /* Caché par défaut */
                 position: fixed; /* Reste en place */
-                z-index: 100; /* Mis en avant */
+                z-index: 110; /* Mis en avant */
                 padding-top: 5rem; 
-                padding-left: 20rem;
+                padding-left: 30%;
+                flex-direction:column;
                 left: 0;
                 top: 0;
                 width:100%; /* Full width */
@@ -50,10 +51,13 @@
                 animation-name: getModal;
                 animation-duration: 0.5s;
                 img{
-                    width:25%;
+                    width:30%;
                 }
                 p{
+                    display:inline;
                     color:white;
+                    padding: 5px;
+                    width: 30%;
                     a{
                         color:white;
                         transition: all 0.3s ease;

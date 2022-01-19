@@ -66,12 +66,12 @@ input, textarea {
 
 .reveal-invisible {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateX(-30px);
 }
 
 .reveal-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
   transition: all 0.3s ease;
 }
 
@@ -123,7 +123,7 @@ input, textarea {
   flex-wrap: wrap;
   height: 10vh;
   width: 100%;
-  background-color: #1b0823;
+  background-color: rgba(27, 8, 35, 0.9);
   z-index: 101;
 }
 #desktopNav ul {
@@ -333,7 +333,7 @@ input, textarea {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
-  margin: 0 5em;
+  margin: 2em 5em;
 }
 #gallery .flexboxGallery article .miniature {
   width: 300px;
@@ -358,10 +358,11 @@ input, textarea {
   /* Caché par défaut */
   position: fixed;
   /* Reste en place */
-  z-index: 100;
+  z-index: 110;
   /* Mis en avant */
   padding-top: 5rem;
-  padding-left: 20rem;
+  padding-left: 30%;
+  flex-direction: column;
   left: 0;
   top: 0;
   width: 100%;
@@ -376,10 +377,13 @@ input, textarea {
   animation-duration: 0.5s;
 }
 #gallery .flexboxGallery article .boxSizing img {
-  width: 25%;
+  width: 30%;
 }
 #gallery .flexboxGallery article .boxSizing p {
+  display: inline;
   color: white;
+  padding: 5px;
+  width: 30%;
 }
 #gallery .flexboxGallery article .boxSizing p a {
   color: white;
@@ -561,6 +565,14 @@ footer #returnToHeader a {
     flex-wrap: wrap;
     gap: 2em;
   }
+
+  #gallery .flexboxGallery article .boxSizing img {
+    width: 50%;
+  }
+
+  #gallery .flexboxGallery article .boxSizing p {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 960px) {
   #headerImage .logo {
@@ -589,6 +601,119 @@ footer #returnToHeader a {
 @media screen and (max-width: 850px) {
   #about {
     margin: 2em;
+  }
+}
+@media screen and (max-width: 580px) {
+  h2 {
+    font-size: 4em;
+  }
+
+  #headerImage {
+    height: 60vh;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  #contact #flexboxForm form input {
+    width: 20em;
+  }
+  #contact #flexboxForm form textarea {
+    max-width: 20em;
+    min-width: 20em;
+  }
+  #contact #flexboxForm #address {
+    width: 15em;
+    height: 15em;
+  }
+
+  footer #topFooter {
+    font-size: 2em;
+  }
+
+  #services .flexboxServices article {
+    width: 15em;
+  }
+
+  #skills {
+    padding: 1em;
+  }
+  #skills .flexboxSkills article {
+    width: 60%;
+    height: 60%;
+  }
+  #skills .flexboxSkills article .skillsImgSizing img {
+    width: 100%;
+    height: 100px;
+  }
+  #skills .flexboxSkills article h3 {
+    font-size: 1.5em;
+  }
+  #skills .flexboxSkills article ul li {
+    font-size: 0.8em;
+  }
+
+  #gallery .flexboxGallery article .boxSizing {
+    padding-left: 15%;
+  }
+
+  #gallery .flexboxGallery article .boxSizing img {
+    width: 70%;
+  }
+
+  #gallery .flexboxGallery article .boxSizing p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  #headerImage {
+    height: 40vh;
+  }
+
+  p {
+    font-size: 0.6em;
+  }
+
+  #contact #flexboxForm form input {
+    width: 12em;
+  }
+  #contact #flexboxForm form textarea {
+    max-width: 12em;
+    min-width: 12em;
+  }
+  #contact #flexboxForm #address {
+    width: 100%;
+    height: 100%;
+  }
+
+  #services .flexboxServices article {
+    width: 10em;
+    height: 5em;
+  }
+  #services .flexboxServices article h3 {
+    font-size: 1.5em;
+  }
+
+  #gallery {
+    margin-top: 1.5em;
+  }
+  #gallery .flexboxGallery article .miniature {
+    width: 200px;
+    height: 200px;
+  }
+
+  #skills {
+    margin-top: 2em;
+    padding: 0.8em;
   }
 }
 
