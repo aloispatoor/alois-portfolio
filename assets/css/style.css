@@ -661,19 +661,18 @@ footer #returnToHeader a {
     padding: 1em;
   }
   #skills .flexboxSkills article {
-    width: 70%;
+    width: 60%;
     height: 70%;
-    padding-bottom: 0.4em;
+    padding: 1.5em;
   }
   #skills .flexboxSkills article .skillsImgSizing img {
-    width: 100%;
-    height: 100px;
+    display: none;
   }
   #skills .flexboxSkills article h3 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   #skills .flexboxSkills article ul li {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   #gallery .flexboxGallery article .boxSizing {
@@ -736,6 +735,16 @@ footer #returnToHeader a {
   #skills {
     margin-top: 2em;
     padding: 0.8em;
+  }
+  #skills .flexboxSkills article {
+    height: 50%;
+    padding: 1em;
+  }
+  #skills .flexboxSkills article h3 {
+    font-size: 1.6em;
+  }
+  #skills .flexboxSkills article ul li {
+    font-size: 0.8em;
   }
 
   #menu-burger {
