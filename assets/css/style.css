@@ -211,6 +211,7 @@ input, textarea {
   height: 100vh;
   top: 0;
   right: 0;
+  overflow: auto;
   padding: 10em 5em;
   text-align: right;
   animation-name: getTheNav;
@@ -465,8 +466,9 @@ input, textarea {
   font-family: wire;
   color: white;
   font-size: 2em;
+  letter-spacing: 5px;
   background-color: black;
-  padding: 0 2em;
+  padding: 0 1em;
   transition: all 0.5s ease;
 }
 #contact .button:hover {
@@ -477,6 +479,9 @@ input, textarea {
 footer {
   background: #1b0823;
   position: relative;
+}
+footer a:hover {
+  text-shadow: 0 0 0.15em #00ff00;
 }
 footer #topFooter {
   display: flex;
@@ -494,6 +499,7 @@ footer #topFooter img {
 }
 footer #topFooter a {
   color: white;
+  transition: all 0.3s ease;
 }
 footer #middleFooter {
   padding: 2em 0;
@@ -510,6 +516,7 @@ footer #middleFooter ul li {
 footer #middleFooter a {
   color: white;
   text-transform: capitalize;
+  transition: all 0.3s ease;
 }
 footer #bottomFooter {
   height: 3rem;
@@ -523,6 +530,7 @@ footer #bottomFooter {
 }
 footer #bottomFooter a {
   color: white;
+  transition: all 0.3s ease;
 }
 footer #returnToHeader {
   position: fixed;
@@ -570,8 +578,21 @@ footer #returnToHeader a {
     width: 50%;
   }
 
+  #gallery .flexboxGallery article .boxSizing img:hover {
+    transform: none;
+  }
+
   #gallery .flexboxGallery article .boxSizing p {
     width: 50%;
+  }
+
+  .reveal-invisible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  footer a:hover {
+    text-shadow: none;
   }
 }
 @media screen and (max-width: 960px) {
@@ -640,8 +661,9 @@ footer #returnToHeader a {
     padding: 1em;
   }
   #skills .flexboxSkills article {
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
+    padding-bottom: 0.4em;
   }
   #skills .flexboxSkills article .skillsImgSizing img {
     width: 100%;
@@ -696,7 +718,7 @@ footer #returnToHeader a {
   }
 
   #services .flexboxServices article {
-    width: 10em;
+    width: 12em;
     height: 5em;
   }
   #services .flexboxServices article h3 {
@@ -714,6 +736,10 @@ footer #returnToHeader a {
   #skills {
     margin-top: 2em;
     padding: 0.8em;
+  }
+
+  #menu-burger {
+    right: 0.8em;
   }
 }
 

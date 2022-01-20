@@ -14,8 +14,20 @@
     #gallery .flexboxGallery article .boxSizing img{
         width: 50%;
     }
+    #gallery .flexboxGallery article .boxSizing img:hover{
+        transform:none;
+    }
     #gallery .flexboxGallery article .boxSizing p{
         width: 50%;
+    }
+    .reveal-invisible{
+        opacity:1;
+        transform: translateX(0);
+    }
+    footer{
+        a:hover{
+            text-shadow: none;
+        }
     }
 }
 
@@ -93,8 +105,9 @@
         padding:1em;
         .flexboxSkills{
             article{
-                width: 60%;
-                height: 60%;
+                width: 70%;
+                height: 70%;
+                padding-bottom: 0.4em;
                 .skillsImgSizing{
                     img{
                         width: 100%;
@@ -156,7 +169,7 @@
     #services{
         .flexboxServices{
             article{
-                width:10em;
+                width:12em;
                 height: 5em;
                 h3{
                     font-size: 1.5em;
@@ -179,5 +192,8 @@
     #skills{
         margin-top: 2em;
         padding:0.8em;
+    }
+    #menu-burger{
+        right: 0.8em;
     }
 }

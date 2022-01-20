@@ -1,6 +1,9 @@
 footer{
     background : $darkPurple;
     position:relative;
+    a:hover{
+        text-shadow: 0 0 0.15em $green;
+    }
     #topFooter{
         @include flex ($just:space-between);
         background : black;
@@ -12,6 +15,7 @@ footer{
         }
         a{
             color: white;
+            transition: all .3s ease;
         }
     }
     #middleFooter{
@@ -26,6 +30,7 @@ footer{
         a{
             color:white;
             text-transform: capitalize;
+            transition: all .3s ease;
         }
     }
     #bottomFooter{
@@ -35,6 +40,7 @@ footer{
         color: white;
         a{
             color:white;
+            transition: all .3s ease;
         }
     }
     #returnToHeader{
