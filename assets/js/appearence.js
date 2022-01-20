@@ -1,13 +1,16 @@
-const getDiv = document.querySelector(".selected-div")
-let myScrollFunc = function () {
-    let y = window.scrollY;
-    if (y >= 5000) {
-        getDiv.classList.add("release-visible")
-        getDiv.classList.remove("release-invisible")
-    } else {
-        getDiv.classList.remove("release-visible")
-        getDiv.classList.add("release-invisible")
+// Initial state
+let scrolling = 1000;
+let getDiv = document.querySelectorAll(".selected-div");
+// adding scroll event
+window.addEventListener('scroll', function(){
+    for (let i = 0; i < getDiv.length; i++){
+        getDiv[i].classList.add('reveal-invisible');
+        if ((document.body.getBoundingClientRect()).height < scrolling){
+            getDiv[i].classList.add('reveal-visible');
+            getDiv[i].classList.remove('reveal-invisible');
+        }
     }
-};
 
-window.addEventListener("scroll", myScrollFunc);
+	// saves the new position for iteration.
+	scrolling = (document.body.getBoundingClientRect()).height;
+});

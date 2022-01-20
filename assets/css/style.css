@@ -72,7 +72,7 @@ input, textarea {
 .reveal-visible {
   opacity: 1;
   transform: translateX(0);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 #headerImage {
