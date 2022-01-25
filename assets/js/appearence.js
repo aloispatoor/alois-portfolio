@@ -1,5 +1,5 @@
 // Initial state
-let scrolling = 1000;
+let scrolling = 850;
 let getDiv = document.querySelectorAll(".selected-div");
 // adding scroll event
 window.addEventListener('scroll', function(){

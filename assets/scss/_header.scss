@@ -51,8 +51,9 @@
     @include flex;
     height: 10vh;
     width: 100%;
-    background-color: rgb(27, 8, 35, 0.9);
+    background-color: $darkPurple;
     z-index:101;
+    transition: .3s;
     ul{
         width: 100%;
         @include flex($just: space-around);
@@ -128,6 +129,7 @@
     position:fixed;
     z-index: 99;
     background: rgb(27, 8, 35, 0.9);
+    backdrop-filter: blur(4px);
     height: 100vh;
     top:0;
     right:0;

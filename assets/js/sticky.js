@@ -1,3 +1,8 @@
+// Obtenir le console.log du scroll
+// window.addEventListener("scroll", function(e){
+//   console.log(document.documentElement.scrollTop);
+// })
+
 // Déclarer les variables globales avant la fonction
 let navBar = document.getElementById("desktopNav");
 // OffsetTop paramètre le nb de pixel entre la navBar et le haut de la page
