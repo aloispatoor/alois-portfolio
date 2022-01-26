@@ -66,7 +66,7 @@ input, textarea {
 
 .reveal-invisible {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-50px);
 }
 
 .reveal-visible {
@@ -83,7 +83,7 @@ input, textarea {
   flex-wrap: wrap;
   height: 80vh;
   width: 100%;
-  background-image: url(../img/pexels-aleksandar-pasaric-1820770.png);
+  background-image: url(../img/pexels-aleksandar-pasaric-1820770-ConvertImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -123,7 +123,7 @@ input, textarea {
   flex-wrap: wrap;
   height: 10vh;
   width: 100%;
-  background-color: #1b0823;
+  background-color: rgba(27, 8, 35, 0.9);
   z-index: 101;
   transition: 0.3s;
 }

@@ -3,7 +3,7 @@
     @include flex;
     height: 80vh;
     width: 100%;
-    background-image: url(../img/pexels-aleksandar-pasaric-1820770.png);
+    background-image: url(../img/pexels-aleksandar-pasaric-1820770-ConvertImage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,7 +51,7 @@
     @include flex;
     height: 10vh;
     width: 100%;
-    background-color: $darkPurple;
+    background-color: $darkPurpleLessOpacity;
     z-index:101;
     transition: .3s;
     ul{
@@ -128,7 +128,7 @@
 #mobileNav{
     position:fixed;
     z-index: 99;
-    background: rgb(27, 8, 35, 0.9);
+    background: $darkPurpleLessOpacity;
     backdrop-filter: blur(4px);
     height: 100vh;
     top:0;
