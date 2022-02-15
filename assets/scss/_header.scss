@@ -46,26 +46,52 @@
     }    
 }
 
-// NAV BAR ON DESKTOP SCREEN SIZE
-#desktopNav{
-    @include flex;
-    height: 10vh;
-    width: 100%;
-    background-color: $darkPurpleLessOpacity;
-    z-index:101;
-    transition: .3s;
-    ul{
+// NAV BAR
+#nav-bar{
+    &.desktopNav{
+        @include flex;
+        height: 10vh;
         width: 100%;
-        @include flex($just: space-around);
-        a{
-            font-family:wire;
-            text-transform: uppercase;
-            font-size: 3rem;
-            color: white;
-            transition: all 0.3s ease;
+        background-color: $darkPurpleLessOpacity;
+        z-index:101;
+        transition: .3s;
+        ul{
+            width: 100%;
+            @include flex($just: space-around);
+            a{
+                font-family:wire;
+                text-transform: uppercase;
+                font-size: 3rem;
+                color: white;
+                transition: all 0.3s ease;
+            }
+            a:hover{
+                text-shadow: 0 0 0.15em $green;
+            }
         }
-        a:hover{
-            text-shadow: 0 0 0.15em $green;
+    }
+    &.mobileNav{
+        position:fixed;
+        z-index: 99;
+        background: $darkPurpleLessOpacity;
+        backdrop-filter: blur(4px);
+        height: 100vh;
+        top:0;
+        right:0;
+        overflow: auto;
+        padding: 10em 5em;
+        text-align: right;
+        animation-name: getTheNav;
+        animation-duration: 0.3s;
+        ul{
+            li{
+                margin-bottom: 3em;
+            }
+        }
+        a{
+            color:white;
+            text-transform: uppercase;
+            font-size: 1.5em;
         }
     }
 }
@@ -124,31 +150,6 @@
 }
 
 
-// MOBILE NAV BAR
-#mobileNav{
-    position:fixed;
-    z-index: 99;
-    background: $darkPurpleLessOpacity;
-    backdrop-filter: blur(4px);
-    height: 100vh;
-    top:0;
-    right:0;
-    overflow: auto;
-    padding: 10em 5em;
-    text-align: right;
-    animation-name: getTheNav;
-    animation-duration: 0.3s;
-    ul{
-        li{
-            margin-bottom: 3em;
-        }
-    }
-    a{
-        color:white;
-        text-transform: uppercase;
-        font-size: 1.5em;
-    }
-}
 
 @keyframes getTheNav{
     from{

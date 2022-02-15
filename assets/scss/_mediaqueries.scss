@@ -1,6 +1,10 @@
 @media screen and (max-width:1024px) {
-    #desktopNav{
+    .desktopNav{
         display:none;
+        visibility: hidden;
+    }
+    .mobileNav{
+        @include flex;
     }
     #menu-burger{
         display:block;
