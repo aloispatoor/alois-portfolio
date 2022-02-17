@@ -1,11 +1,13 @@
 @media screen and (max-width:1024px) {
-    .desktopNav{
-        display:none;
-        visibility: hidden;
-    }
-    .mobileNav{
-        @include flex;
-    }
+    #nav-bar{
+        &.desktopNav{
+            display:none;
+            visibility: hidden;
+        }
+        &.mobileNav{
+            @include flex;
+        }
+    } 
     #menu-burger{
         display:block;
     }

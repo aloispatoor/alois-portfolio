@@ -1,5 +1,5 @@
 // Déclarer les variables globales avant la fonction
-let navBar = document.querySelector(".desktopNav");
+let navBar = document.querySelector('.desktopNav');
 // OffsetTop paramètre le nb de pixel entre la navBar et le haut de la page
 let sticky = navBar.offsetTop;
 // Fonction pour appeler la classe .sticky en scrollant jusqu'à toucher la navbar

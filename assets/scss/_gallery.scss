@@ -68,7 +68,19 @@
                 }
             }
         }
-    }  
+    } 
+    #endGallery{
+        margin-top:3em;
+        text-align:center;
+        p{
+            margin-bottom: 0.5em;
+            letter-spacing: 0.20em;
+        }
+        a{
+            font-weight: bolder;
+            color: black;
+        }
+    } 
 }
 
 // KEYFRAME MODAL

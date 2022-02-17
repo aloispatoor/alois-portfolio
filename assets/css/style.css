@@ -146,8 +146,9 @@ input, textarea {
   text-shadow: 0 0 0.15em #00ff00;
 }
 #nav-bar.mobileNav {
+  display: block;
   position: fixed;
-  z-index: 99;
+  z-index: 101;
   background: rgba(27, 8, 35, 0.9);
   backdrop-filter: blur(4px);
   height: 100vh;
@@ -170,7 +171,7 @@ input, textarea {
 
 #menu-burger {
   position: fixed;
-  z-index: 100;
+  z-index: 102;
   top: 10vh;
   right: 2em;
   background: #1b0823;
@@ -394,6 +395,18 @@ input, textarea {
 #gallery .flexboxGallery article .boxSizing p a:hover {
   color: #00ff00;
 }
+#gallery #endGallery {
+  margin-top: 3em;
+  text-align: center;
+}
+#gallery #endGallery p {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.2em;
+}
+#gallery #endGallery a {
+  font-weight: bolder;
+  color: black;
+}
 
 @keyframes getModal {
   from {
@@ -549,12 +562,11 @@ footer #returnToHeader a {
 }
 
 @media screen and (max-width: 1024px) {
-  .desktopNav {
+  #nav-bar.desktopNav {
     display: none;
     visibility: hidden;
   }
-
-  .mobileNav {
+  #nav-bar.mobileNav {
     display: flex;
     justify-content: center;
     align-items: center;

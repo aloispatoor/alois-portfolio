@@ -71,8 +71,9 @@
         }
     }
     &.mobileNav{
+        display:block;
         position:fixed;
-        z-index: 99;
+        z-index: 101;
         background: $darkPurpleLessOpacity;
         backdrop-filter: blur(4px);
         height: 100vh;
@@ -82,7 +83,7 @@
         padding: 10em 5em;
         text-align: right;
         animation-name: getTheNav;
-        animation-duration: 0.3s;
+        animation-duration: .3s;
         ul{
             li{
                 margin-bottom: 3em;
@@ -99,7 +100,7 @@
 // MENU BURGER
 #menu-burger{
 	position: fixed;
-    z-index: 100;
+    z-index: 102;
 	top: 10vh;
 	right: 2em;
     background: $darkPurple;
