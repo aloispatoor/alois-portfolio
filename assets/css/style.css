@@ -474,6 +474,9 @@ input, textarea {
   width: 20em;
   height: 20em;
 }
+#contact a[type=submit] {
+  cursor: pointer;
+}
 #contact .button {
   text-align: center;
   text-transform: uppercase;
