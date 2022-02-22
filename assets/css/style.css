@@ -461,6 +461,26 @@ input, textarea {
   min-height: 15em;
   max-height: 15em;
 }
+#contact #flexboxForm form button[type=submit] {
+  cursor: pointer;
+}
+#contact #flexboxForm form button {
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: wire;
+  color: white;
+  font-size: 2em;
+  letter-spacing: 5px;
+  background-color: black;
+  padding: 0 1em;
+  margin-top: 1em;
+  transition: all 0.5s ease;
+}
+#contact #flexboxForm form button:hover {
+  box-shadow: 0 0 0.15em #00ff00;
+  color: #00ff00;
+}
 #contact #flexboxForm #address {
   display: flex;
   justify-content: center;
@@ -473,24 +493,6 @@ input, textarea {
   letter-spacing: 0.2em;
   width: 20em;
   height: 20em;
-}
-#contact a[type=submit] {
-  cursor: pointer;
-}
-#contact .button {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: wire;
-  color: white;
-  font-size: 2em;
-  letter-spacing: 5px;
-  background-color: black;
-  padding: 0 1em;
-  transition: all 0.5s ease;
-}
-#contact .button:hover {
-  box-shadow: 0 0 0.15em #00ff00;
-  color: #00ff00;
 }
 
 footer {

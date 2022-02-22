@@ -179,10 +179,11 @@
             <h2 class="green">me contacter</h2>
             <p>Envie de me soumettre vos idées et qu'on travaille ensemble ? Ou tout simplement besoin de renseignement ? Voici tout mes contacts</p>
             <div id="flexboxForm">
-                <form action="submit_contact.php" method="POST">
+                <form action="controller.php" method="post">
                     <input type="text" id="name" name="name" placeholder="Votre Nom">
-                    <input type="email" id="email" name="email" aria-describedby="email-help" placeholder="Votre Adresse e-mail">
+                    <input type="email" id="email" name="email" placeholder="Votre Adresse e-mail">
                     <textarea name="message" id="message" placeholder="Votre Message"></textarea>
+                    <button type="submit" value="submit" class="button">Envoyer</button>
                 </form>
                 <div id="address">
                     <p>Aloïs Patoor <br>
@@ -192,7 +193,6 @@
                         palois89@posteo.net</p>
                 </div>
             </div>
-            <a type="submit" class="button">envoyer</a>
         </section>
     </main>
     <!-- FOOTER -->

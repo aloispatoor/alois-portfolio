@@ -28,6 +28,18 @@
                 min-height: 15em;
                 max-height: 15em;
             }
+            button[type=submit]{
+                cursor: pointer;
+            }
+            button{
+                @include button;
+                margin-top: 1em;
+                transition: all 0.5s ease;
+            }  
+            button:hover{
+                box-shadow: 0 0 0.15em $green;
+                color: $green;
+            }
         }
         #address{
             @include flex;
@@ -39,15 +51,5 @@
             height: 20em;
         }
     }
-    a[type=submit]{
-        cursor: pointer;
-    }
-    .button{
-        @include button;
-        transition: all 0.5s ease;
-    }  
-    .button:hover{
-        box-shadow: 0 0 0.15em $green;
-        color: $green;
-    }
+    
 }
