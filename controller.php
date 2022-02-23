@@ -5,9 +5,9 @@
 
     //identifiants mysql
     $host = "localhost";
-    $username = "xyfl3645_apatoor";
-    $password = "4k9j6mRSMnyTUAq";
-    $database = "xyfl3645_portfolio";
+    $username = "root";
+    $password = "";
+    $database = "portfolio";
 
     $name = $_POST["name"]; 
     $email = $_POST["email"];
