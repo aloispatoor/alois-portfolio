@@ -1,3 +1,31 @@
+<?php
+    $alert = false;
+    if(!empty($_GET) && (!empty($_GET['error']))){
+        $alert = true;
+        if(!empty($_GET['error'] == 'missingInput')){
+            $errorMsg = "Vous n'avez rien indiqué dans les champs. Forcément, ça ne va pas marcher.";
+        }
+        if(!empty($_GET['error'] == 'invalidEmail')){
+            $errorMsg = "Ce n'est pas ce que j'appellerais un e-mail";
+        }
+        if(!empty($_GET['error'] == 'invalidName')){
+            $errorMsg = "Le nom est trop court. Désolé par avance si vous vous appelez, par exemple, Bob";
+        }
+        if(!empty($_GET['error'] == 'invalidMessage')){
+            $errorMsg = "Ah désolé, le message semble trop court";
+        }
+        if(!empty($_GET['error'] == 'unknownError')){
+            $errorMsg = "Une erreur inconnue est survenue. Là je ne peux pas vous aider.";
+        }
+    }
+    if(!empty($_GET) && (!empty($_GET['success']))){
+        $alert = true;
+        if(!empty($_GET['success'] == 'messageSent')){
+            $errorMsg = "Félicitation, votre message a été envoyé !";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -164,7 +192,7 @@
                 <article>
                     <div id="sixthModal" class="boxSizing" onclick="getImg('close')">
                         <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4">
-                        <p>Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>. Développement en cours.</p>
+                        <p>Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>. Site consultable <a href="https://redscorpio4.com" taget="_blank">ici</a></p>
                     </div>
                     <div class="miniature">
                         <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4" class="modal-content" onclick="getImg('sixthModal')">
@@ -179,10 +207,15 @@
             <h2 class="green">me contacter</h2>
             <p>Envie de me soumettre vos idées et qu'on travaille ensemble ? Ou tout simplement besoin de renseignement ? Voici tout mes contacts</p>
             <div id="flexboxForm">
-                <form action="controller.php" method="post">
+                <form action="../src/controller.php" method="post">
                     <input type="text" id="name" name="name" placeholder="Votre Nom">
                     <input type="email" id="email" name="email" placeholder="Votre Adresse e-mail">
                     <textarea name="message" id="message" placeholder="Votre Message"></textarea>
+                    <?php if ($alert) : ?>
+                    <div class="alert">
+                        <?php echo "<p>".$errorMsg."</p>"; ?>
+                    </div>
+                    <?php endif; ?>
                     <button type="submit" value="submit" class="button">Envoyer</button>
                 </form>
                 <div id="address">

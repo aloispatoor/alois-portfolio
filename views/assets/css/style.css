@@ -474,6 +474,7 @@ input, textarea {
   letter-spacing: 5px;
   background-color: black;
   padding: 0 1em;
+  width: 60%;
   margin-top: 1em;
   transition: all 0.5s ease;
 }
@@ -493,6 +494,14 @@ input, textarea {
   letter-spacing: 0.2em;
   width: 20em;
   height: 20em;
+}
+#contact .alert {
+  margin-top: 1em;
+  font-size: 1em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {

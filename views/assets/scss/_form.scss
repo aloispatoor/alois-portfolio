@@ -33,6 +33,7 @@
             }
             button{
                 @include button;
+                width: 60%;
                 margin-top: 1em;
                 transition: all 0.5s ease;
             }  
@@ -50,6 +51,14 @@
             width: 20em;
             height: 20em;
         }
+    }
+    .alert{
+        margin-top: 1em;
+        font-size: 1em;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
