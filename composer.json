@@ -1,0 +1,15 @@
+{
+    "name": "paloi/alois-portfolio",
+    "autoload": {
+        "psr-4": {
+            "Paloi\\AloisPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alois Patoor",
+            "email": "palois89@posteo.net"
+        }
+    ],
+    "require": {}
+}
