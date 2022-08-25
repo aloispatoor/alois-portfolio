@@ -35,21 +35,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de maquettage, réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche">
     <link rel="alternate" hreflang="fr">
-    <link rel="icon" type="image/png" sizes="32x32" href="views/assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="views/assets/img/favicon-16x16.png">
-    <link rel="stylesheet" href="views/assets/css/all.css">
-    <link rel="stylesheet" href="views/assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Aloïs Patoor, Développeur web et web designer en Périgord</title>
     <meta property="og:title" content="Aloïs Patoor, Développeur web et web designer en Périgord" />
     <meta property="og:description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de maquettage, réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche" />
-    <meta property="og:image" content="views/assets/img/og_img.png" />
+    <meta property="og:image" content="assets/img/og_img.png" />
 </head>
 <body>
     <header>
         <!-- BACKGROUND IMAGE WITH TITLE AND LOGO -->
         <div id="headerImage">
             <h1>aloïs</h1>
-            <img class="logo" src="views/assets/img/logo.png" alt="Logo d'Aloïs Patoor">
+            <img class="logo" src="assets/img/logo.png" alt="Logo d'Aloïs Patoor">
             <h1>patoor</h1>
         </div>
         <!-- DESKTOP NAV -->
@@ -86,7 +86,7 @@
             <div class="flexboxSkills">
                 <article class="selected-div reveal-invisible">
                     <div class="skillsImgSizing">
-                        <img src="views/assets/img/pexels-mikechie-esparagoza-1601773.jpg" alt="Photo d'illustration de design vintage">
+                        <img src="assets/img/pexels-mikechie-esparagoza-1601773.jpg" alt="Photo d'illustration de design vintage">
                     </div>
                     <h3>Compétences Graphiques</h3>
                     <ul>
@@ -98,12 +98,12 @@
                 </article>
                 <article class="selected-div reveal-invisible">
                     <div class="skillsImgSizing">
-                        <img src="views/assets/img/pexels-kevin-ku-577585.jpg" alt="Photo d'illustration d'un écran de pc">
+                        <img src="assets/img/pexels-kevin-ku-577585.jpg" alt="Photo d'illustration d'un écran de pc">
                     </div>
                     <h3>Compétences Développement</h3>
                     <ul>
                         <li>HTML / CSS / SASS</li>
-                        <li>Javascript</li>
+                        <li>Javascript / REACT</li>
                         <li>PHP / SYMFONY</li>
                         <li>SQL / MYSQL</li>
                     </ul>
@@ -145,58 +145,58 @@
             <div class="flexboxGallery">
                 <article>
                     <div id="firstModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="views/assets/img/f_plomberie.png" alt="Maquette du site François Plomberie">
+                        <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie">
                         <p>Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong> du site François Plomberie</p>
                     </div>
                     <div class="miniature">
-                        <img src="views/assets/img/f_plomberie.png" alt="Maquette du site François Plomberie" class="modal-content" onclick="getImg('firstModal')">
+                        <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie" class="modal-content" onclick="getImg('firstModal')">
                     </div>
                 </article>
                 <article>
                     <div id="secondModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="views/assets/img/adn.png" alt="Maquette du site ADN - Au-delà des Normes">
+                        <img src="assets/img/adn.png" alt="Maquette du site ADN - Au-delà des Normes">
                         <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>. Développement en cours.</p>
                     </div>
                     <div class="miniature">
-                        <img src="views/assets/img/adn.png" alt="Maquette du site Gaming Campus" class="modal-content" onclick="getImg('secondModal')">
+                        <img src="assets/img/adn.png" alt="Maquette du site Gaming Campus" class="modal-content" onclick="getImg('secondModal')">
                     </div>
                 </article>
                 <article>
                     <div id="thirdModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="views/assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching">
+                        <img src="assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching">
                         <p>Maquette refaite à l'identique en utilisant <strong>HTML et SCSS</strong>. Lien GitHub <a href="https://github.com/aloispatoor/PEPSCOACHING" target="_blank">ici</a></p>
                     </div>
                     <div class="miniature">
-                        <img src="views/assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching" class="modal-content" onclick="getImg('thirdModal')">
+                        <img src="assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching" class="modal-content" onclick="getImg('thirdModal')">
                     </div>
                 </article>
             </div>
             <div class="flexboxGallery">
                 <article>
                     <div id="fourthModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="views/assets/img/n_genest.png" alt="Maquette du site Nathalie Genest">
+                        <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest">
                         <p>Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong> du site Nathalie Genest</p>
                     </div>
                     <div class="miniature">
-                        <img src="views/assets/img/n_genest.png" alt="Maquette du site Nathalie Genest" class="modal-content" onclick="getImg('fourthModal')">
+                        <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest" class="modal-content" onclick="getImg('fourthModal')">
                     </div>
                 </article>
                 <article>
                     <div id="fifthModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="views/assets/img/pokepet.png" alt="Maquette du site Pokepet">
+                        <img src="assets/img/pokepet.png" alt="Maquette du site Pokepet">
                         <p>Site factice réalisé en projet de groupe. Codé en <strong>HTML et SCSS</strong>, maquetté sur <strong>Figma</strong></p>
                     </div>
                     <div class="miniature">
-                        <img src="views/assets/img/pokepet.png" alt="Maquette du site Pokepet" class="modal-content" onclick="getImg('fifthModal')">
+                        <img src="assets/img/pokepet.png" alt="Maquette du site Pokepet" class="modal-content" onclick="getImg('fifthModal')">
                     </div>
                 </article>
                 <article>
                     <div id="sixthModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="views/assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4">
+                        <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4">
                         <p>Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>. Site consultable <a href="https://redscorpio4.com" taget="_blank">ici</a></p>
                     </div>
                     <div class="miniature">
-                        <img src="views/assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4" class="modal-content" onclick="getImg('sixthModal')">
+                        <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4" class="modal-content" onclick="getImg('sixthModal')">
                     </div>
                 </article>
             </div>
@@ -235,7 +235,7 @@
             <a href="#headerImage"><i class="fas fa-angle-double-up"></i></a>
         </div>
         <section id="topFooter">
-            <img src="views/assets/img/logo.png" alt="Logo de Aloïs Patoor">
+            <img src="assets/img/logo.png" alt="Logo de Aloïs Patoor">
             <div id="icons">
                 <a href="https://github.com/aloispatoor" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/aloïs-patoor-67a676199" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -254,10 +254,10 @@
             <p><a href="#">Mentions Légales</a> - Copyright 2022 Aloïs Patoor</p>
         </section>
     </footer>
-    <script src="views/assets/js/menuburger.js"></script>
-    <script src="views/assets/js/modal.js"></script>
-    <script src="views/assets/js/sticky.js"></script>
-    <script src="views/assets/js/appearence.js"></script>
-    <script src="views/assets/js/arrow.js"></script>
+    <script src="assets/js/menuburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/sticky.js"></script>
+    <script src="assets/js/appearence.js"></script>
+    <script src="assets/js/arrow.js"></script>
 </body>
 </html>

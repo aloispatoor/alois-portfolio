@@ -1,0 +1,60 @@
+footer{
+    background : $darkPurple;
+    position:relative;
+    a:hover{
+        text-shadow: 0 0 0.15em $green;
+    }
+    #topFooter{
+        @include flex ($just:space-between);
+        background : black;
+        color: white;
+        font-size: 3em;
+        padding: 0 2em;
+        img{
+            width:3rem;
+        }
+        a{
+            color: white;
+            transition: all .3s ease;
+        }
+    }
+    #middleFooter{
+        padding: 2em 0;
+        @include flex;
+        text-align:center;
+        ul{
+            li{
+                margin-bottom:1em;
+            }
+        }
+        a{
+            color:white;
+            text-transform: capitalize;
+            transition: all .3s ease;
+        }
+    }
+    #bottomFooter{
+        height: 3rem;
+        @include flex;
+        background : black;
+        color: white;
+        a{
+            color:white;
+            transition: all .3s ease;
+        }
+    }
+    #returnToHeader{
+        position:fixed;
+        padding: 5px 20px;
+        bottom: 3rem;
+        right: -50px;
+        z-index: 99;
+        border-radius: 30px;
+        font-size: 2.5em;
+        text-shadow: 0 0 0.15em $green;
+        transition: .3s;
+        a{
+            color : black;
+        }
+    }
+}
