@@ -28,13 +28,13 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de maquettage, réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche">
-    <link rel="alternate" hreflang="fr">
+    <link rel="alternate" hreflang="fr-FR">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="stylesheet" href="assets/css/all.css">
@@ -75,9 +75,16 @@
             <article>
                 <p>Avant toute chose, sachez que ce portfolio est aussi chaotique que mon parcours professionnel.
                     Diplômé d’un BTS Assistant de Manager, j’excellais bien plus dans le <strong>SQL</strong> que les autres matières.
-                    Ensuite, aprés des annèes à chercher ma voie et moultes missions d’interim en agro-alimentaire, le métier de développeur web m’est paru comme une évidence le jour où j'ai développé ma propre <strong>application web</strong> pour présenter mes dessins.(Ah oui parce que je suis dessinateur aussi)</p>
+                    Ensuite, aprés des annèes à chercher ma voie et moultes missions d’interim en agro-alimentaire, le métier de développeur web m’est paru comme une évidence le jour où j'ai développé ma propre <strong>application web</strong> pour présenter mes dessins.(Ah oui parce que je suis dessinateur aussi)
+                </p>
+
+                <p>
+                    C'est ainsi que je me suis lancé dans une formation de <strong>Développeur web / web mobile</strong> que j'ai réussi !
+                </p>
                     
-                    <p>Ma fibre <strong>artistique / graphiste</strong> a trouvé une façon de se sortir du placard dans ce métier qui demande <strong>curiosité et créativité</strong>. Véritable ermite vivant devant son écran d'ordinateur, c'est un véritable plaisir pour moi de prendre du temps sur vos demandes (<strong>sites web</strong>, <strong>UX Design</strong>, création de logo...) pour les chérir et les peaufiner.</p>
+                <p>
+                    Ma fibre <strong>artistique / graphiste</strong> a trouvé une façon de se sortir du placard dans ce métier qui demande <strong>curiosité et créativité</strong>. Véritable ermite vivant devant son écran d'ordinateur, c'est un véritable plaisir pour moi de prendre du temps sur vos demandes (<strong>sites web</strong>, <strong>UX Design</strong>, création de logo...) pour les chérir et les peaufiner.
+                </p>
             </article>
         </section>
         <!-- COMPETENCES -->
@@ -93,7 +100,6 @@
                         <li>Photoshop</li>
                         <li>Illustrator</li>
                         <li>Figma</li>
-                        <li>After Effect</li>
                     </ul>
                 </article>
                 <article class="selected-div reveal-invisible">
@@ -103,7 +109,7 @@
                     <h3>Compétences Développement</h3>
                     <ul>
                         <li>HTML / CSS / SASS</li>
-                        <li>Javascript / REACT</li>
+                        <li>JavaScript / REACT / Angular</li>
                         <li>PHP / SYMFONY</li>
                         <li>SQL / MYSQL</li>
                     </ul>
@@ -126,8 +132,8 @@
             </div>
             <div class="flexboxServices">
                 <article class="selected-div reveal-invisible">
-                    <h3>Site Vitrine / E-Commerce</h3>
-                    <p>Création du <strong>site vitrine</strong> de votre entreprise ou d’un <strong>e-commerce</strong></p>
+                    <h3>Site Vitrine statique ou dynamique</h3>
+                    <p>Création de votre <strong>site vitrine</strong> et/ou de votre <strong>blog</strong></p>
                 </article>
                 <article class="selected-div reveal-invisible">
                     <h3>Responsive Design</h3>
@@ -155,7 +161,7 @@
                 <article>
                     <div id="secondModal" class="boxSizing" onclick="getImg('close')">
                         <img src="assets/img/adn.png" alt="Maquette du site ADN - Au-delà des Normes">
-                        <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>. Développement en cours.</p>
+                        <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>. Développement en <strong>PHP / SYMFONY</strong>.</p>
                     </div>
                     <div class="miniature">
                         <img src="assets/img/adn.png" alt="Maquette du site Gaming Campus" class="modal-content" onclick="getImg('secondModal')">
@@ -163,11 +169,11 @@
                 </article>
                 <article>
                     <div id="thirdModal" class="boxSizing" onclick="getImg('close')">
-                        <img src="assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching">
-                        <p>Maquette refaite à l'identique en utilisant <strong>HTML et SCSS</strong>. Lien GitHub <a href="https://github.com/aloispatoor/PEPSCOACHING" target="_blank">ici</a></p>
+                        <img src="assets/img/amejisuto7.jpg" alt="Screenshot du site Amejisuto7.art">
+                        <p>Portfolio artistique réalisé en <strong>PHP</strong>, <strong>SCSS</strong> et quelques implémentations de <strong>JavaScript</strong></p>
                     </div>
                     <div class="miniature">
-                        <img src="assets/img/pepscoaching.png" alt="Maquette du site Pep's Coaching" class="modal-content" onclick="getImg('thirdModal')">
+                        <img src="assets/img/amejisuto7.jpg" alt="Screenshot du site Amejisuto7.art" class="modal-content" onclick="getImg('thirdModal')">
                     </div>
                 </article>
             </div>
@@ -251,7 +257,7 @@
             </ul>
         </section>
         <section id="bottomFooter">
-            <p><a href="#">Mentions Légales</a> - Copyright 2022 Aloïs Patoor</p>
+            <p>Copyright 2022 Aloïs Patoor</p>
         </section>
     </footer>
     <script src="assets/js/menuburger.js"></script>
