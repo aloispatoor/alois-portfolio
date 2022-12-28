@@ -217,6 +217,7 @@
                     <form action="../src/controller.php" method="post">
                         <input type="text" id="name" name="name" placeholder="Votre Nom">
                         <input type="email" id="email" name="email" placeholder="Votre Adresse e-mail">
+                        <input type="hidden" id="botcheck" name="botcheck">
                         <textarea name="message" id="message" placeholder="Votre Message"></textarea>
                         <?php if ($alert) : ?>
                         <div class="alert">

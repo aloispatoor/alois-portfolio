@@ -1,7 +1,7 @@
 <?php
   require 'includes/config.php';
 
-  if(!empty($_POST["message"]) && !empty($_POST["email"]) && !empty($_POST["name"])){
+  if(!empty($_POST["message"]) && !empty($_POST["email"]) && !empty($_POST["name"]) && empty($_POST["botcheck"])){
     $name = trim(htmlspecialchars($_POST["name"])); 
     $email = trim(htmlspecialchars($_POST["email"]));
     $message = trim(htmlspecialchars($_POST["message"]));
