@@ -111,7 +111,9 @@
                             <li>HTML / CSS / SASS</li>
                             <li>JavaScript / REACT / Angular</li>
                             <li>PHP / SYMFONY</li>
-                            <li>SQL / MYSQL</li>
+                            <li>API REST</li>
+                            <li>Java / Spring Boot</li>
+                            <li>SQL / MYSQL / PostgreSQL</li>
                         </ul>
                     </article>
                 </div>
