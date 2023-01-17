@@ -41,7 +41,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Aloïs Patoor, Développeur web et web designer en Périgord</title>
         <meta property="og:title" content="Aloïs Patoor, Développeur web et web designer en Périgord" />
-        <meta property="og:description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de maquettage, réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche" />
+        <meta property="og:description" content="Développeur web et web designer basé sur Périgueux, en Dordogne. Je vous propose mes services en terme de réalisation de charte graphique et d'intégration web front-end, tout en veillant au bon référencement naturel de votre site sur les moteurs de recherche" />
         <meta property="og:image" content="assets/img/og_img.png" />
     </head>
     <body>
@@ -71,11 +71,11 @@
         <main>
             <!-- A PROPOS -->
             <section id="about">
-                <h2 class="purple">à propos</h2>
+                <h2 class="green">à propos</h2>
                 <article>
                     <p>Avant toute chose, sachez que ce portfolio est aussi chaotique que mon parcours professionnel.
                         Diplômé d’un BTS Assistant de Manager, j’excellais bien plus dans le <strong>SQL</strong> que les autres matières.
-                        Ensuite, aprés des annèes à chercher ma voie et moultes missions d’interim en agro-alimentaire, le métier de développeur web m’est paru comme une évidence le jour où j'ai développé ma propre <strong>application web</strong> pour présenter mes dessins.(Ah oui parce que je suis dessinateur aussi)
+                        Ensuite, aprés des annèes à chercher ma voie, le métier de développeur web m’est paru comme une évidence le jour où j'ai développé ma propre <strong>application web</strong> pour présenter mes dessins.
                     </p>
 
                     <p>
@@ -91,7 +91,7 @@
             <section id="skills">
                 <h2 class="green">compétences</h2>
                 <div class="flexboxSkills">
-                    <article class="selected-div reveal-invisible">
+                    <article>
                         <div class="skillsImgSizing">
                             <img src="assets/img/pexels-mikechie-esparagoza-1601773.jpg" alt="Photo d'illustration de design vintage">
                         </div>
@@ -102,7 +102,7 @@
                             <li>Figma</li>
                         </ul>
                     </article>
-                    <article class="selected-div reveal-invisible">
+                    <article>
                         <div class="skillsImgSizing">
                             <img src="assets/img/pexels-kevin-ku-577585.jpg" alt="Photo d'illustration d'un écran de pc">
                         </div>
@@ -113,7 +113,7 @@
                             <li>PHP / SYMFONY</li>
                             <li>API REST</li>
                             <li>Java / Spring Boot</li>
-                            <li>SQL / MYSQL / PostgreSQL</li>
+                            <li>MYSQL / PostgreSQL</li>
                         </ul>
                     </article>
                 </div>
@@ -122,22 +122,22 @@
             <section id="services">
                 <h2 class="green">services</h2>
                 <div class="flexboxServices">
-                    <article class="selected-div reveal-invisible">
+                    <article>
                         <h3>Référencement SEO</h3>
                         <p>Affichage sémantique des informations,
                             des pages propres pour un <strong>référencement optimal</strong>.</p>
                     </article>
-                    <article class="selected-div reveal-invisible">
+                    <article>
                         <h3>Intégration Web</h3>
                         <p>Intégration <strong>HTML/CSS</strong> respectueuse des standards du web</p>
                     </article>
                 </div>
                 <div class="flexboxServices">
-                    <article class="selected-div reveal-invisible">
+                    <article>
                         <h3>Site Vitrine statique ou dynamique</h3>
                         <p>Création de votre <strong>site vitrine</strong> et/ou de votre <strong>blog</strong></p>
                     </article>
-                    <article class="selected-div reveal-invisible">
+                    <article>
                         <h3>Responsive Design</h3>
                         <p>Votre site <strong>adapté</strong> à tout type d’écran</p>
                     </article>
@@ -146,7 +146,7 @@
             <!-- GALLERY -->
             <section id="gallery">
                 <div id="titleGallery">
-                    <h2 class="purple">réalisations</h2>
+                    <h2 class="green">réalisations</h2>
                     <p>Voici quelques exemples de mes réalisations.</p>
                     <p>Cliquez sur les images pour les agrandir et avoir plus d’informations</p>
                 </div>
@@ -163,7 +163,7 @@
                     <article>
                         <div id="secondModal" class="boxSizing" onclick="getImg('close')">
                             <img src="assets/img/adn.png" alt="Maquette du site ADN - Au-delà des Normes">
-                            <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>. Développement en <strong>PHP / SYMFONY</strong>.</p>
+                            <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>. Développement en <strong>PHP / SYMFONY</strong>. Site consultable <a href="https://audeladesnormes.xyfl3645.odns.fr/" target="_blank">ici</a></p>
                         </div>
                         <div class="miniature">
                             <img src="assets/img/adn.png" alt="Maquette du site Gaming Campus" class="modal-content" onclick="getImg('secondModal')">
@@ -201,15 +201,12 @@
                     <article>
                         <div id="sixthModal" class="boxSizing" onclick="getImg('close')">
                             <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4">
-                            <p>Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>. Site consultable <a href="https://redscorpio4.com" taget="_blank">ici</a></p>
+                            <p>Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>. Site consultable <a href="https://redscorpio4.com" target="_blank">ici</a></p>
                         </div>
                         <div class="miniature">
                             <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4" class="modal-content" onclick="getImg('sixthModal')">
                         </div>
                     </article>
-                </div>
-                <div id="endGallery">
-                    <p>Vous pouvez également consulter mes réalisations en terme artistique <a href="https://amejisuto7.art" target="_blank">ici</a></p>
                 </div>
             </section>
             <section id="contact">
@@ -266,7 +263,6 @@
         <script src="assets/js/menuburger.js"></script>
         <script src="assets/js/modal.js"></script>
         <script src="assets/js/sticky.js"></script>
-        <script src="assets/js/appearence.js"></script>
         <script src="assets/js/arrow.js"></script>
     </body>
 </html>

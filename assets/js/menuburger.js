@@ -4,9 +4,11 @@ let getNavBar = document.getElementById('nav-bar');
 
 // MENU BURGER APPEARENCE
 menuBurger.addEventListener('click', function(){
+    console.log("Menu Burger clicked");
     getNavBar.classList.toggle('mobileNav');
     getNavBar.classList.toggle('desktopNav'); 
 });
+
 
 // ANIMATION MENUBURGER => CROSS
 menuBurger.addEventListener('click', function(e) {

@@ -1,13 +1,14 @@
 #skills{
     background: black;
     background: linear-gradient(180deg, black 0%, $darkPurple 100%); 
-    margin-top: 3em;
+    padding-top: 3em;
     padding:2em;
     .flexboxSkills{
         @include flex($just:space-around);
         article{
             @include flex($dir: column);
             margin-top: 2em;
+            padding: 2rem;
             width: 25rem;
             height: 25rem;
             background: $darkPurple;

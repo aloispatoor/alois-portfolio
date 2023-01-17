@@ -55,7 +55,7 @@
         background-color: $darkPurpleLessOpacity;
         backdrop-filter: blur(30px);
         z-index:101;
-        transition: .3s;
+        transition: .5s;
         ul{
             width: 100%;
             @include flex($just: space-around);
@@ -82,10 +82,10 @@
         top:0;
         right:0;
         overflow: auto;
-        padding: 5em;
-        text-align: center;
+        padding: 2rem;
+        text-align: right;
         animation-name: getTheNav;
-        animation-duration: .3s;
+        animation-duration: .5s;
         ul{
             li{
                 margin-bottom: 3em;
