@@ -4,8 +4,8 @@
   src: url(../fonts/Monoton/Monoton-Regular.ttf);
 }
 @font-face {
-  font-family: wire;
-  src: url(../fonts/Wire_one/WireOne-Regular.ttf);
+  font-family: fira;
+  src: url(../fonts/Fira_Code/fira-code.ttf);
 }
 @font-face {
   font-family: roboto;
@@ -31,18 +31,31 @@ h1 {
 }
 
 h2 {
-  font-family: wire;
+  font-family: fira;
   text-transform: uppercase;
   font-size: 5rem;
   text-align: center;
 }
 
 h3 {
-  font-family: wire;
+  font-family: fira;
 }
 
 input, textarea {
   font-family: roboto, sans-serif;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
 
 .green {
@@ -137,9 +150,9 @@ input, textarea {
   flex-wrap: wrap;
 }
 #nav-bar.desktopNav ul a {
-  font-family: wire;
+  font-family: fira;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   transition: all 0.3s ease;
 }
@@ -211,8 +224,7 @@ input, textarea {
 }
 
 #bars.open {
-  background: transparent;
-  /* la barre du milieu disparait */
+  background: transparent; /* la barre du milieu disparait */
 }
 
 /* celles du haut et du bas s'inclinent pour former une croix */
@@ -250,7 +262,7 @@ input, textarea {
 }
 #about p {
   padding-bottom: 0.5em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 #skills {
@@ -265,6 +277,7 @@ input, textarea {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 #skills .flexboxSkills article {
   display: flex;
@@ -275,7 +288,8 @@ input, textarea {
   margin-top: 2em;
   padding: 2rem;
   width: 25rem;
-  height: 25rem;
+  height: auto;
+  max-height: 30rem;
   background: #1b0823;
   box-shadow: 1px 1px #00ff00;
   color: white;
@@ -287,7 +301,7 @@ input, textarea {
   object-position: center;
 }
 #skills .flexboxSkills article h3 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -309,13 +323,15 @@ input, textarea {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: baseline;
   color: white;
   margin-bottom: 1.5em;
 }
 #services .flexboxServices article {
   background: black;
   width: 25em;
-  height: 7em;
+  height: auto;
+  max-height: 10em;
   padding: 1em;
 }
 #services .flexboxServices article h3 {
@@ -336,7 +352,7 @@ input, textarea {
 }
 #gallery #titleGallery p {
   margin-bottom: 0.5em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 #gallery .flexboxGallery {
   display: flex;
@@ -366,23 +382,17 @@ input, textarea {
   transform: scale(1.1);
 }
 #gallery .flexboxGallery article .boxSizing {
-  display: none;
-  /* Caché par défaut */
-  position: fixed;
-  /* Reste en place */
-  z-index: 110;
-  /* Mis en avant */
+  display: none; /* Caché par défaut */
+  position: fixed; /* Reste en place */
+  z-index: 110; /* Mis en avant */
   padding-top: 5rem;
   padding-left: 30%;
   flex-direction: column;
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Scroll si besoin */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Scroll si besoin */
   background-color: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(4px);
   animation-name: getModal;
@@ -439,7 +449,7 @@ input, textarea {
 }
 #contact p {
   margin-bottom: 0.5em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: white;
 }
 #contact #flexboxForm {
@@ -596,11 +606,9 @@ footer #returnToHeader a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   #menu-burger {
     display: block;
   }
-
   #contact #flexboxForm {
     display: flex;
     justify-content: center;
@@ -609,19 +617,15 @@ footer #returnToHeader a {
     flex-wrap: wrap;
     gap: 2em;
   }
-
   #gallery .flexboxGallery article .boxSizing img {
     width: 50%;
   }
-
   #gallery .flexboxGallery article .boxSizing img:hover {
     transform: none;
   }
-
   #gallery .flexboxGallery article .boxSizing p {
     width: 50%;
   }
-
   footer a:hover {
     text-shadow: none;
   }
@@ -633,11 +637,9 @@ footer #returnToHeader a {
   #headerImage h1 {
     padding-left: 1em;
   }
-
   footer #returnToHeader {
     display: none;
   }
-
   #services h2 {
     margin-bottom: 0.25em;
   }
@@ -659,15 +661,12 @@ footer #returnToHeader a {
   h2 {
     font-size: 4em;
   }
-
   #headerImage {
     height: 60vh;
   }
-
   p {
     font-size: 0.8em;
   }
-
   #contact #flexboxForm form input {
     width: 20em;
   }
@@ -679,15 +678,12 @@ footer #returnToHeader a {
     width: 15em;
     height: 15em;
   }
-
   footer #topFooter {
     font-size: 2em;
   }
-
   #services .flexboxServices article {
     width: 15em;
   }
-
   #skills {
     padding: 1em;
   }
@@ -705,15 +701,12 @@ footer #returnToHeader a {
   #skills .flexboxSkills article ul li {
     font-size: 1em;
   }
-
   #gallery .flexboxGallery article .boxSizing {
     padding-left: 15%;
   }
-
   #gallery .flexboxGallery article .boxSizing img {
     width: 70%;
   }
-
   #gallery .flexboxGallery article .boxSizing p {
     width: 70%;
   }
@@ -722,19 +715,15 @@ footer #returnToHeader a {
   h1 {
     font-size: 2em;
   }
-
   h2 {
     font-size: 3em;
   }
-
   #headerImage {
     height: 40vh;
   }
-
   p {
     font-size: 0.6em;
   }
-
   #contact #flexboxForm form input {
     width: 12em;
   }
@@ -746,7 +735,6 @@ footer #returnToHeader a {
     width: 100%;
     height: 100%;
   }
-
   #services .flexboxServices article {
     width: 12em;
     height: 5em;
@@ -754,7 +742,6 @@ footer #returnToHeader a {
   #services .flexboxServices article h3 {
     font-size: 1.5em;
   }
-
   #gallery {
     margin-top: 1.5em;
   }
@@ -762,7 +749,6 @@ footer #returnToHeader a {
     width: 200px;
     height: 200px;
   }
-
   #skills {
     margin-top: 2em;
     padding: 0.8em;
@@ -777,7 +763,6 @@ footer #returnToHeader a {
   #skills .flexboxSkills article ul li {
     font-size: 0.8em;
   }
-
   #menu-burger {
     right: 0.8em;
   }

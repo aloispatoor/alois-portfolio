@@ -6,7 +6,8 @@ let getNavBar = document.getElementById('nav-bar');
 menuBurger.addEventListener('click', function(){
     console.log("Menu Burger clicked");
     getNavBar.classList.toggle('mobileNav');
-    getNavBar.classList.toggle('desktopNav'); 
+    getNavBar.classList.toggle('desktopNav');
+    getNavBar.classList.contains('mobileNav') ? menuBurger.ariaExpanded = true : menuBurger.ariaExpanded = false;
 });
 
 

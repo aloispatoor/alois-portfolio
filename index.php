@@ -65,9 +65,12 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
         </ul>
     </nav>
     <!-- MENU BURGER -->
-    <nav id="menu-burger" class="displayNone">
-        <a id="link" href="#"><span id="bars"></span></a>
-    </nav>
+    <div role="button" tabindex="0" id="menu-burger" aria-controls="nav-bar" class="displayNone">
+        <a id="link" href="#">
+            <span id="bars"></span>
+            <span class="sr-only">Menu</span>
+        </a>
+    </div>
 </header>
 
 <main>
@@ -118,10 +121,10 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
                 <h3>Compétences Développement</h3>
                 <ul>
                     <li>HTML / CSS / SASS</li>
-                    <li>JavaScript / REACT / Angular</li>
+                    <li>JavaScript / React / Vue / Angular</li>
                     <li>PHP / SYMFONY</li>
-                    <li>API REST</li>
                     <li>Java / Spring Boot</li>
+                    <li>API REST</li>
                     <li>MYSQL / PostgreSQL</li>
                 </ul>
             </article>
@@ -138,7 +141,7 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
             </article>
             <article>
                 <h3>Intégration Web</h3>
-                <p>Intégration <strong>HTML/CSS</strong> respectueuse des standards du web</p>
+                <p>Intégration <strong>HTML/CSS</strong> respectueuse des standards du web et des exigences en terme d'accessibilité (conformément au RGAA)</p>
             </article>
         </div>
         <div class="flexboxServices">
@@ -161,35 +164,40 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
         </div>
         <div class="flexboxGallery">
             <article>
-                <div id="firstModal" class="boxSizing" onclick="getImg('close')">
+                <div role="button" tabindex="0" id="firstModal" class="boxSizing" onclick="getImg('close')">
                     <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie">
-                    <p>Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong>
-                        du site François Plomberie</p>
+                    <p>
+                        Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong>
+                        du site François Plomberie
+                    </p>
                 </div>
-                <div class="miniature">
+                <div role="button" class="miniature" tabindex="0" aria-controls="firstModal">
                     <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie"
                          class="modal-content" onclick="getImg('firstModal')">
                 </div>
             </article>
             <article>
-                <div id="secondModal" class="boxSizing" onclick="getImg('close')">
+                <div role="button" tabindex="0" id="secondModal" class="boxSizing" onclick="getImg('close')">
                     <img src="assets/img/adn.png" alt="Maquette du site ADN - Au-delà des Normes">
                     <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>.
-                        Développement en <strong>PHP / SYMFONY</strong>. Site consultable <a
-                                href="https://audeladesnormes.org/" target="_blank">ici</a></p>
+                        Développement en <strong>PHP / SYMFONY</strong>. Site consultable
+                        <a href="https://audeladesnormes.org/" target="_blank">ici</a>
+                    </p>
                 </div>
-                <div class="miniature">
+                <div role="button" class="miniature" tabindex="0" aria-controls="secondModal">
                     <img src="assets/img/adn.png" alt="Maquette du site Gaming Campus" class="modal-content"
                          onclick="getImg('secondModal')">
                 </div>
             </article>
             <article>
-                <div id="thirdModal" class="boxSizing" onclick="getImg('close')">
+                <div role="button" tabindex="0" id="thirdModal" class="boxSizing" onclick="getImg('close')">
                     <img src="assets/img/amejisuto7.jpeg" alt="Screenshot du site Amejisuto7.art">
-                    <p>Portfolio artistique réalisé en <strong>Javascript / React</strong>. Site consultable <a
-                                href="https://amejisuto7.art/" target="_blank">ici</a></p></p>
+                    <p>
+                        Portfolio artistique réalisé en <strong>Javascript / React</strong>. Site consultable
+                        <a href="https://amejisuto7.art/" target="_blank">ici</a>
+                    </p>
                 </div>
-                <div class="miniature">
+                <div role="button" class="miniature" tabindex="0" aria-controls="thirdModal">
                     <img src="assets/img/amejisuto7.jpeg" alt="Screenshot du site Amejisuto7.art" class="modal-content"
                          onclick="getImg('thirdModal')">
                 </div>
@@ -197,34 +205,40 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
         </div>
         <div class="flexboxGallery">
             <article>
-                <div id="fourthModal" class="boxSizing" onclick="getImg('close')">
+                <div role="button" tabindex="0" id="fourthModal" class="boxSizing" onclick="getImg('close')">
                     <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest">
-                    <p>Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong>
-                        du site Nathalie Genest</p>
+                    <p>
+                        Maquette réalisée sur <strong>Figma</strong>. Le but était de revoir l'<strong>UX Design</strong>
+                        du site Nathalie Genest
+                    </p>
                 </div>
-                <div class="miniature">
+                <div role="button" class="miniature" tabindex="0" aria-controls="fourthModal">
                     <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest" class="modal-content"
                          onclick="getImg('fourthModal')">
                 </div>
             </article>
             <article>
-                <div id="fifthModal" class="boxSizing" onclick="getImg('close')">
+                <div role="button" tabindex="0" id="fifthModal" class="boxSizing" onclick="getImg('close')">
                     <img src="assets/img/pokepet.png" alt="Maquette du site Pokepet">
-                    <p>Site factice réalisé en projet de groupe. Codé en <strong>HTML et SCSS</strong>, maquetté sur
-                        <strong>Figma</strong></p>
+                    <p>
+                        Site factice réalisé en projet de groupe. Codé en <strong>HTML et SCSS</strong>, maquetté sur
+                        <strong>Figma</strong>
+                    </p>
                 </div>
-                <div class="miniature">
+                <div role="button" class="miniature" tabindex="0" aria-controls="fifthModal">
                     <img src="assets/img/pokepet.png" alt="Maquette du site Pokepet" class="modal-content"
                          onclick="getImg('fifthModal')">
                 </div>
             </article>
             <article>
-                <div id="sixthModal" class="boxSizing" onclick="getImg('close')">
+                <div role="button" tabindex="0" id="sixthModal" class="boxSizing" onclick="getImg('close')">
                     <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4">
-                    <p>Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>.
-                        Site consultable <a href="https://redscorpio4.com" target="_blank">ici</a></p>
+                    <p>
+                        Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>.
+                        Site consultable <a href="https://redscorpio4.com" target="_blank">ici</a>
+                    </p>
                 </div>
-                <div class="miniature">
+                <div role="button" class="miniature" tabindex="0" aria-controls="sixthModal">
                     <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4" class="modal-content"
                          onclick="getImg('sixthModal')">
                 </div>
@@ -233,41 +247,43 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
     </section>
     <section id="contact">
         <h2 class="green">me contacter</h2>
-        <p>Envie de me soumettre vos idées et qu'on travaille ensemble ? Ou tout simplement besoin de renseignement ?
-            Voici tout mes contacts</p>
+        <p>
+            Envie de me soumettre vos idées et qu'on travaille ensemble ? Ou tout simplement besoin de renseignement ?
+            Voici tout mes contacts
+        </p>
         <div id="flexboxForm">
             <form action="../src/controller.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Votre Nom">
-                <input type="email" id="email" name="email" placeholder="Votre Adresse e-mail">
+                <input type="text" id="name" name="name" aria-label="Votre Nom" placeholder="Votre Nom">
+                <input type="email" id="email" name="email" aria-label="Votre adresse e-mail" placeholder="Votre Adresse e-mail">
                 <input type="hidden" id="botcheck" name="botcheck">
-                <textarea name="message" id="message" placeholder="Votre Message"></textarea>
+                <textarea name="message" id="message" aria-label="Votre Message" placeholder="Votre Message"></textarea>
                 <?php if ($alert) : ?>
-                    <div class="alert">
+                    <div class="alert" role="alert">
                         <?php echo "<p>" . $errorMsg . "</p>"; ?>
                     </div>
                 <?php endif; ?>
                 <button type="submit" value="submit" class="button">Envoyer</button>
             </form>
             <div id="address">
-                <p>Aloïs Patoor <br>
-                    9 rue icarie <br>
-                    24000 PERIGUEUX <br>
-                    Tel : 06.08.64.60.11 <br>
-                    palois89@posteo.net</p>
+                <p>
+                    Aloïs Patoor
+                    <br>
+                    palois89@posteo.net
+                </p>
             </div>
         </div>
     </section>
 </main>
 <!-- FOOTER -->
 <footer>
-    <div id="returnToHeader">
+    <div role="button" id="returnToHeader" aria-label="Retourner en haut de page">
         <a href="#headerImage"><i class="fas fa-angle-double-up"></i></a>
     </div>
     <section id="topFooter">
         <img src="assets/img/logo.png" alt="Logo de Aloïs Patoor">
         <div id="icons">
-            <a href="https://github.com/aloispatoor" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/aloïs-patoor-67a676199" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aloispatoor" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aloïs-patoor-67a676199" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
         </div>
     </section>
     <section id="middleFooter">
@@ -280,7 +296,7 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
         </ul>
     </section>
     <section id="bottomFooter">
-        <p>Copyright 2022 Aloïs Patoor - SIRET 920 274 982 00015</p>
+        <p>Copyright 2025 Aloïs Patoor - SIRET 920 274 982 00015</p>
     </section>
 </footer>
 <script src="assets/js/menuburger.js"></script>

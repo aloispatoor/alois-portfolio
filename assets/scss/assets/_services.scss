@@ -6,12 +6,14 @@
     }
     .flexboxServices{
         @include flex($just:space-evenly);
+        align-items: baseline;
         color: white;
         margin-bottom: 1.5em;
         article{
             background: black;
             width:25em;
-            height:7em;
+            height: auto;
+            max-height:10em;
             padding:1em;
             h3{
                 font-size: 2em;

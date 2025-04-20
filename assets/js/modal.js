@@ -9,7 +9,7 @@ function getImg(modal){
         getModals[i].style.display = "none";
     }
     // Ouvrir la bonne modal et paramètrer le button 'close'
-    if(modal != 'close'){
+    if(modal !== 'close'){
       goodModal.style.display = "flex";
     } else if (window.addEventListener("click", function(){
       goodModal.style.display = "none";

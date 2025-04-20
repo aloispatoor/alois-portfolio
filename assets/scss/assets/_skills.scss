@@ -5,12 +5,14 @@
     padding:2em;
     .flexboxSkills{
         @include flex($just:space-around);
+        align-items: baseline;
         article{
             @include flex($dir: column);
             margin-top: 2em;
             padding: 2rem;
             width: 25rem;
-            height: 25rem;
+            height: auto;
+            max-height: 30rem;
             background: $darkPurple;
             box-shadow: 1px 1px $green;
             color: white;
@@ -23,7 +25,7 @@
                 }
             }
             h3{
-                font-size: 3em;
+                font-size: 2em;
                 font-weight: lighter;
                 text-transform: uppercase;
             }
