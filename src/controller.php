@@ -14,7 +14,7 @@
     header("Location:../views/index.php?error=invalidEmail#contact");
     exit();
   }
-  if (strlen($name) < 3 || strlen($name) > 100) {
+  if (strlen($name) < 2 || strlen($name) > 100) {
       header("Location:../views/index.php?error=invalidName#contact");
       exit();
   }

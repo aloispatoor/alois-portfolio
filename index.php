@@ -10,7 +10,7 @@ if (!empty($_GET) && (!empty($_GET['error']))) {
         $errorMsg = "Ce n'est pas ce que j'appellerais un e-mail";
     }
     if (!empty($_GET['error'] == 'invalidName')) {
-        $errorMsg = "Le nom est trop court. Désolé par avance si vous vous appelez, par exemple, Bob";
+        $errorMsg = "Le nom est trop court. Désolé par avance si vous vous appelez, par exemple, K";
     }
     if (!empty($_GET['error'] == 'invalidMessage')) {
         $errorMsg = "Ah désolé, le message semble trop court";
