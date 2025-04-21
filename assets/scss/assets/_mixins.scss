@@ -11,14 +11,14 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color:none;
+    color: none;
 }
 
 @mixin button{
     border: none;
     text-align:center;
     text-transform: uppercase;
-    font-family: wire;
+    font-family: fira;
     color: white;
     font-size: 2em;
     letter-spacing: 5px;
