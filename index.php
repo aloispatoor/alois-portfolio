@@ -136,22 +136,21 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
         <div class="flexboxServices">
             <article>
                 <h3>Référencement SEO</h3>
-                <p>Affichage sémantique des informations,
-                    des pages propres pour un <strong>référencement optimal</strong>.</p>
+                <p>Votre site trouvé facilement par vos futurs clients sur les moteurs de recherche</p>
             </article>
             <article>
                 <h3>Intégration Web</h3>
-                <p>Intégration <strong>HTML/CSS</strong> respectueuse des standards du web et des exigences en terme d'accessibilité (conformément au RGAA)</p>
+                <p>Des pages claires, rapides et agréables à naviguer pour tou-te-s vos utilisateur-ice-s.</p>
             </article>
         </div>
         <div class="flexboxServices">
             <article>
-                <h3>Site Vitrine statique ou dynamique</h3>
-                <p>Création de votre <strong>site vitrine</strong> et/ou de votre <strong>blog</strong></p>
+                <h3>Site Vitrine</h3>
+                <p>Mettez en valeur votre activité avec un site ou un blog qui reflète votre image.</p>
             </article>
             <article>
                 <h3>Responsive Design</h3>
-                <p>Votre site <strong>adapté</strong> à tout type d’écran</p>
+                <p>Un site beau et pratique sur ordinateur, tablette ou smartphone.</p>
             </article>
         </div>
     </section>
@@ -181,7 +180,7 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
                     <img src="assets/img/adn.png" alt="Maquette du site ADN - Au-delà des Normes">
                     <p>Maquettage du site de <strong>l'association ADN</strong> réalisée sur <strong>Figma</strong>.
                         Développement en <strong>PHP / SYMFONY</strong>. Site consultable
-                        <a href="https://audeladesnormes.org/" target="_blank">ici</a>
+                        <a href="https://audeladesnormes.org/" target="_blank">ici (ouvre une nouvelle fenêtre)</a>
                     </p>
                 </div>
                 <div role="button" class="miniature" tabindex="0" aria-controls="secondModal">
@@ -194,7 +193,7 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
                     <img src="assets/img/amejisuto7.jpeg" alt="Screenshot du site Amejisuto7.art">
                     <p>
                         Portfolio artistique réalisé en <strong>Javascript / React</strong>. Site consultable
-                        <a href="https://amejisuto7.art/" target="_blank">ici</a>
+                        <a href="https://amejisuto7.art/" target="_blank">ici (ouvre une nouvelle fenêtre)</a>
                     </p>
                 </div>
                 <div role="button" class="miniature" tabindex="0" aria-controls="thirdModal">
@@ -235,7 +234,7 @@ if (!empty($_GET) && (!empty($_GET['success']))) {
                     <img src="assets/img/redscorpio4.jpg" alt="Maquette du site RedScorpio4">
                     <p>
                         Maquettage du site de musique <strong>RedScorpio4</strong> réalisé sur <strong>Figma</strong>.
-                        Site consultable <a href="https://redscorpio4.com" target="_blank">ici</a>
+                        Site consultable <a href="https://redscorpio4.com" target="_blank">ici (ouvre une nouvelle fenêtre)</a>
                     </p>
                 </div>
                 <div role="button" class="miniature" tabindex="0" aria-controls="sixthModal">
